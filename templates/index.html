@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Predictor</h1>
+        <form action="/predict" method="post">
+            <label for="worst_texture">Worst Texture</label>
+            <input type="number" step="any" id="worst_texture" name="worst_texture" required>
+
+            <label for="radius_error">Radius Error</label>
+            <input type="number" step="any" id="radius_error" name="radius_error" required>
+
+            <label for="worst_symmetry">Worst Symmetry</label>
+            <input type="number" step="any" id="worst_symmetry" name="worst_symmetry" required>
+
+            <label for="mean_concave_points">Mean Concave Points</label>
+            <input type="number" step="any" id="mean_concave_points" name="mean_concave_points" required>
+
+            <label for="worst_concavity">Worst Concavity</label>
+            <input type="number" step="any" id="worst_concavity" name="worst_concavity" required>
+
+            <label for="area_error">Area Error</label>
+            <input type="number" step="any" id="area_error" name="area_error" required>
+
+            <label for="worst_radius">Worst Radius</label>
+            <input type="number" step="any" id="worst_radius" name="worst_radius" required>
+
+            <label for="worst_concave_points">Worst Concave Points</label>
+            <input type="number" step="any" id="worst_concave_points" name="worst_concave_points" required>
+
+            <label for="worst_area">Worst Area</label>
+            <input type="number" step="any" id="worst_area" name="worst_area" required>
+
+            <label for="mean_concavity">Mean Concavity</label>
+            <input type="number" step="any" id="mean_concavity" name="mean_concavity" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
